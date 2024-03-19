@@ -1,8 +1,9 @@
+import { Link , useLocation} from "react-router-dom"
 import { useState } from "react"
 import Sidebar from "./Sidebar"
 
 export default function Navbar() {
-
+    const location = useLocation()
     const [showSidebar, setShowSidebar] = useState(false)
     const links = [
         {
@@ -29,7 +30,7 @@ export default function Navbar() {
                 <a className="logo" href="#!">Pawsome<span> Plates</span></a>
                 <div className="nav-links">
                     {links.map(link => (
-                        <a href="#!" key={link.name}>{link.name}</a>
+                        <Link className={location.pathname === link.path ? "active" : " "} to={link.path} key={link.name}>{link.name}</Link>
                     ))}
                 </div>
                 <div onClick={() => setShowSidebar(true)} className={showSidebar ? "sidebar-btn active" : "sidebar-btn"}>
