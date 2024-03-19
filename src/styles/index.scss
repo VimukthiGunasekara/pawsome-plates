@@ -1,8 +1,11 @@
+@import "partials/navbar.scss";
+@import "partials/animations.scss";
+
 :root {
     --primary-color: #eb0aa0;
     --background-color: #ffffff;
     --background-light: #ffffff;
-    --shadow-color: #858484;
+    --shadow-color: #f3f3f3;
     --text-color: #070707;
     --text-light: #333232;
     --font-size: 16px;
@@ -24,61 +27,113 @@ a {
     text-decoration: none;
 }
 
-.navbar {
-    height: 55px;
-    box-shadow: 0 3px 6px var(--shadow-color);
-    background-color: var(--background-color);
-    color: var(--text-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+img {
+    object-fit: cover;
+}
 
-    .logo {
-        font-size: 1.8em;
-        font-weight: bold;
-        color: var(--primary-color);
-        text-shadow: 0 1px 3px var(--shadow-color);
+.btn {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    outline: none;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    padding: 0.8em 1em;
+    font-size: 0.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 
-        span {
-            color: var(--text-color);
-        }
-    }
-
-    .nav-links {
-        a {
-            margin-left: 1em;
-            color: var(--text-light);
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            position: relative;
-
-            &::before {
-                content: '';
-                display: inline-block;
-                height: 3px;
-                width: 100%;
-                background-color: var(--primary-color);
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                transform: scaleX(0);
-                transition: transform calc(var(--animation-speed) * 0.4s) ease-in-out;
-            }
-
-            &:hover {
-                &::before {
-                    transform: scaleX(1);
-                }
-            }
-
-            &.active {
-                color: var(--primary-color);
-                font-weight: bold;
-            }
-        }
+    &:hover {
+        box-shadow: 0 1px 3px var(--shadow-color);
     }
 }
 
 .container {
     padding-inline: 15vw;
+}
+
+.main {
+    padding-block: 5vw;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+
+    .col {
+        width: 50%;
+    }
+
+    .title {
+        color: var(--text-color);
+        font-size: 3em;
+        line-height: 1;
+    }
+
+    .info {
+        color: var(--text-light);
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 1.25em 0 1.25em 0;
+    }
+}
+
+.section.hero {
+    .typography {
+        padding-right: 1em;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75vw;
+
+        .custom-image {
+            transform: scale(0);
+            opacity: 0;
+            animation: getAnimationaDuration(0.5s) popOut forwards;
+
+            &:nth-child(2) {
+                animation-delay: 0.1s;
+            }
+
+            &:nth-child(3) {
+                animation-delay: 0.3s;
+            }
+
+            &:nth-child(4) {
+                animation-delay: 0.2s;
+            }
+        }
+    }
+}
+
+.custom-image {
+    height: 0;
+    width: 100%;
+    padding-top: 90%;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .navbar {
+        .nav-links {
+            display: none;
+        }
+
+        .sidebar-btn {
+            display: block;
+        }
+    }
 }
