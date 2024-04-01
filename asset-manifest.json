@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pawsome-plates/static/css/main.394b323e.css",
+    "main.js": "/pawsome-plates/static/js/main.c26a9e26.js",
+    "index.html": "/pawsome-plates/index.html",
+    "main.394b323e.css.map": "/pawsome-plates/static/css/main.394b323e.css.map",
+    "main.c26a9e26.js.map": "/pawsome-plates/static/js/main.c26a9e26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.394b323e.css",
+    "static/js/main.c26a9e26.js"
+  ]
+}
