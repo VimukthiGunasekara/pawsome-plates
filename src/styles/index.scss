@@ -5,7 +5,7 @@
     --primary-color: #eb0aa0;
     --background-color: #ffffff;
     --background-light: #e4e4e4;
-    --second-color: #ffe7f7;
+    --second-color: #ffd3f0;
     --shadow-color: #f3f3f3;
     --text-color: #070707;
     --text-light: #6d6c6c;
@@ -139,6 +139,7 @@ img {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 5px 15px var(--shadow-color);
+    position: relative;
 
     .recipe-card-info {
         padding: 15px;
@@ -147,6 +148,7 @@ img {
     .recipe-card-title {
         font-size: 1.2em;
         font-weight: bold;
+        margin-top: 0.5em;
         margin-bottom: 0.5em;
         color: var(--text-color);
     }
@@ -158,7 +160,9 @@ img {
     }
 
     .recipe-card-btn {
-        color: var(--primary-color);
+        color: var(--second-color);
+        background-color: var(--primary-color);
+        border-radius: 5px;
         font-size: 1em;
         font-weight: bold;
         margin-top: 0.75em;
@@ -168,16 +172,21 @@ img {
 
     .recipe-card-btn:hover {
         color: var(--background-color);
-        background-color: var(--primary-color);
         border-radius: 5px;
     }
 }
 
 
 .recipe-card-time-cards {
+    position: absolute;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
-    margin-top: 0.5em;
+    margin-top: -2.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    z-index: 1;
 }
 
 .rctc-prep,
