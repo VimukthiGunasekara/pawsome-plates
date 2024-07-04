@@ -2,7 +2,7 @@ export default function CategorySection() {
     return (
         <div className="section category">
             <h1 className="category-title">Homemade<span className="category-title-snap"> Styles</span></h1>
-            <p className="category-title-sec">recipes category</p>
+            <p className="category-title-sec">Explore delicious, easy-to-make recipes for every occasion.</p>
             <div class="section category-section">
                 <div class="category-item">
                     <img src="/image/categoryimg/1.png" alt="Category 1" />
