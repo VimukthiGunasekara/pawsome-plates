@@ -1,7 +1,7 @@
 {
   "name": "pawsome-plates",
   "version": "0.1.0",
-  "homepage": "https://VimukthiGunasekara.github.io/pawsome-plates",
+  "homepage": "https://VimukthiGunasekara.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
