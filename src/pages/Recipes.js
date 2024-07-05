@@ -1,4 +1,5 @@
 import RecipeCard from "../components/RecipeCard"
+import FooterSection from "../components/Footer";
 
 export default function Recipes() {
     const recipes = [
@@ -67,10 +68,15 @@ export default function Recipes() {
         }
     ].sort(() => Math.random() - 1)
     return (
-        <div className="recipes-container">
-            {recipes.map((recipe, index) => (
-                <RecipeCard key={index} recipe={recipe} />
-            ))}
+        <div>
+            <div className="recipes-container">
+                {recipes.map((recipe, index) => (
+                    <RecipeCard key={index} recipe={recipe} />
+                ))}
+
+
+            </div>
+            <FooterSection />
         </div>
     )
 }
