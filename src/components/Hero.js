@@ -3,7 +3,7 @@ import CustomImage from "./CustomImage";
 export default function HeroSection() {
     const images = [
         "./image/1.png}",
-        "pawsome-plates/image/2.png",
+        "https://vimukthigunasekara.github.io/pawsome-plates/image/2.png",
         "pawsome-plates/image/3.png",
         "pawsome-plates/image/4.png"
     ]
