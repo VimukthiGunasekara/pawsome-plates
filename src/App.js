@@ -11,7 +11,7 @@ import Settings from "./pages/Settings";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/pawsome-plates">
       <Navbar />
       <div className="container main">
         <Routes>
