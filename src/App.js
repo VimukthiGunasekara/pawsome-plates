@@ -10,6 +10,7 @@ import Recipes from "./pages/Recipes";
 import Settings from "./pages/Settings";
 
 function App() {
+  console.log(process.env.PUBLIC_URL);
   return (
     <Router basename="/pawsome-plates">
       <Navbar />

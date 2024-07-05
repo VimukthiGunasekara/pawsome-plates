@@ -6,6 +6,7 @@ import FooterSection from "../components/Footer";
 export default function Home() {
     return (
         <div>
+
             <HeroSection />
             <CategorySection />
             <CommunitySection />
