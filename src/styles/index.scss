@@ -2,7 +2,9 @@
 @import "partials/recipe.scss";
 @import "partials/category.scss";
 @import "partials/community.scss";
+@import "partials/bookinfo.scss";
 @import "partials/animations.scss";
+
 
 :root {
     --primary-color: #eb0aa0;
@@ -37,20 +39,22 @@ img {
 }
 
 .btn {
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px var(--shadow-color);
-    outline: none;
+    padding: 10px 20px;
+    font-size: 1rem;
     color: var(--background-color);
     background-color: var(--primary-color);
-    padding: 0.8em 1em;
-    font-size: 0.8em;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
     &:hover {
-        box-shadow: 0 1px 3px var(--shadow-color);
+        background-color: var(--text-color);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
     }
 }
 
@@ -136,44 +140,18 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px; 
-    background-color:var(--second-color);
+    height: 100px;
+    background-color: var(--second-color);
     border-bottom: 2px solid var(--primary-color);
     border-radius: 5px;
-    margin-top: 50px;
-  
-    p {
-      font-size: 1.2rem;
-      color: #343a40;
-      margin: 0 20px 0 0;  
-    }
-  
-    button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: #0056b3;
-      }
-  
-      &:active {
-        background-color: #004085;
-      }
-  
-      &:focus {
-        outline: none;
-        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
-      }
-    }
-  }
-  
+    margin-top: 5em;
 
+    p {
+        font-size: 1.2rem;
+        color: #343a40;
+        margin: 0 20px 0 0;
+    }
+}
 
 @media screen and (max-width:1280px) {
     .container {
