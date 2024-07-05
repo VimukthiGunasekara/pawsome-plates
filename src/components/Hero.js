@@ -2,7 +2,7 @@ import CustomImage from "./CustomImage";
 
 export default function HeroSection() {
     const images = [
-        "pawsome-plates/image/1.png",
+        "./image/1.png}",
         "pawsome-plates/image/2.png",
         "pawsome-plates/image/3.png",
         "pawsome-plates/image/4.png"
