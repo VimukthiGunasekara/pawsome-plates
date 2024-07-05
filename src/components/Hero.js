@@ -4,8 +4,8 @@ export default function HeroSection() {
     const images = [
         "./image/1.png}",
         "https://vimukthigunasekara.github.io/pawsome-plates/image/2.png",
-        "pawsome-plates/image/3.png",
-        "pawsome-plates/image/4.png"
+        "${process.env.PUBLIC_URL}/image/3.png",
+        "/image/4.png"
     ]
     return (
         <div className="section hero">
