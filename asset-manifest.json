@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pawsome-plates/static/css/main.7fa7432b.css",
-    "main.js": "/pawsome-plates/static/js/main.636fb76e.js",
+    "main.js": "/pawsome-plates/static/js/main.e053538c.js",
     "index.html": "/pawsome-plates/index.html",
     "main.7fa7432b.css.map": "/pawsome-plates/static/css/main.7fa7432b.css.map",
-    "main.636fb76e.js.map": "/pawsome-plates/static/js/main.636fb76e.js.map"
+    "main.e053538c.js.map": "/pawsome-plates/static/js/main.e053538c.js.map"
   },
   "entrypoints": [
     "static/css/main.7fa7432b.css",
-    "static/js/main.636fb76e.js"
+    "static/js/main.e053538c.js"
   ]
 }
