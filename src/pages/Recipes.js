@@ -61,7 +61,7 @@ export default function Recipes() {
         },
         {
             title: "Beef and Vegetable Stir-Fry",
-            image: `${process.env.PUBLIC_URL}/image/recipeimg/9.png`,
+            image: `${process.env.PUBLIC_URL}/image/recipeimg/8.png`,
             description: "Protein-packed Beef and Vegetable Stir-Fry with nutritious veggies offer a flavorful, textured dog meal.",
             prep_time: "10 Minutes",
             cook_time: "15 Minutes",
