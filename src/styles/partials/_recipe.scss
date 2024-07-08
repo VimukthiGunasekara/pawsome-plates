@@ -26,25 +26,9 @@
         color: var(--text-light);
         font-size: 0.9em;
         letter-spacing: 1px;
-    }
-
-    .recipe-card-btn {
-        color: var(--second-color);
-        background-color: var(--primary-color);
-        border-radius: 5px;
-        font-size: 1em;
-        font-weight: bold;
-        margin-top: 0.75em;
-        padding: 0.5em;
-        display: inline-block;
-    }
-
-    .recipe-card-btn:hover {
-        color: var(--background-color);
-        border-radius: 5px;
+        margin-bottom: 15px;
     }
 }
-
 
 .recipe-card-time-cards {
     position: absolute;

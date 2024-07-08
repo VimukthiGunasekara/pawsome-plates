@@ -1,3 +1,4 @@
+import React from "react";
 import RecipeCard from "../components/RecipeCard"
 import FooterSection from "../components/Footer";
 
@@ -64,6 +65,34 @@ export default function Recipes() {
             image: `${process.env.PUBLIC_URL}/image/recipeimg/9.png`,
             description: "Protein-packed Beef and Vegetable Stir-Fry with nutritious veggies offer a flavorful, textured dog meal.",
             prep_time: "10 Minutes",
+            cook_time: "15 Minutes",
+        },
+        {
+            title: "Fish and Sweet Potato Mash",
+            image: `${process.env.PUBLIC_URL}/image/recipeimg/10.png`,
+            description: "This Fish and Sweet Potato Mash offers dogs protein from fish, vitamins and fiber from vegetables, and carbohydrates from sweet potato. Adjust portions based on your dog's size, age, and dietary needs.",
+            prep_time: "15 Minutes",
+            cook_time: "30 Minutes",
+        },
+        {
+            title: "Pupcakes",
+            image: `${process.env.PUBLIC_URL}/image/recipeimg/11.png`,
+            description: "These Pupcakes are a delightful treat for special occasions or celebrations for your dog. Remember to store them in an airtight container and use them within a week",
+            prep_time: "15 Minutes",
+            cook_time: "20 Minutes",
+        },
+        {
+            title: "Celebration Treats",
+            image: `${process.env.PUBLIC_URL}/image/recipeimg/12.png`,
+            description: "These Celebration Treats are a fun and flavorful way to mark a special day for your furry friend. Store them in an airtight container in the refrigerator and use them within a week.",
+            prep_time: "15 Minutes",
+            cook_time: "15 Minutes",
+        },
+        {
+            title: "Cheesy Chicken Bites",
+            image: `${process.env.PUBLIC_URL}/image/recipeimg/13.png`,
+            description: "These Cheesy Chicken Bites are small, flavorful treats ideal for dog training. They combine chicken and cheese, making them enticing. Store in an airtight container and use within a week.",
+            prep_time: "15 Minutes",
             cook_time: "15 Minutes",
         }
     ].sort(() => Math.random() - 1)

@@ -1,4 +1,4 @@
-import { Link , useLocation} from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { useState } from "react"
 import Sidebar from "./Sidebar"
 
@@ -27,7 +27,7 @@ export default function Navbar() {
     return (
         <>
             <div className="navbar container">
-                <a className="logo" href="#!">Pawsome<span> Plates</span></a>
+                <Link to="/" className="logo">Pawsome<span> Plates</span></Link>
                 <div className="nav-links">
                     {links.map(link => (
                         <Link className={location.pathname === link.path ? "active" : " "} to={link.path} key={link.name}>{link.name}</Link>

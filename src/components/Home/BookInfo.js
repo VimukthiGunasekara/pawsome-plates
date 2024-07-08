@@ -10,7 +10,7 @@ export default function BookInfoSection() {
                 <div className="info-container">
                     <h4 className="info">📑 20+ Recipes.</h4>
                     <h4 className="info">🗂️ 1000+ Downloads</h4>
-                    <h4 className="info">⭐ 4.5/5 Ratings</h4>
+                    <h4 className="info">⭐ 4.6/5 Ratings</h4>
                 </div>
             </div>
         </div>

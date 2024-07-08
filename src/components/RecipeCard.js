@@ -1,4 +1,5 @@
 import CustomImage from "./CustomImage"
+import { redirectToWeb } from "./utils/utils";
 
 export default function RecipeCard({ recipe }) {
     return (
@@ -19,7 +20,7 @@ export default function RecipeCard({ recipe }) {
                 <p className="recipe-card-title">{recipe.title}</p>
                 <p className="recipe-card-desc">{recipe.description}</p>
 
-                <p className="recipe-card-btn">View Recipe</p>
+                <button onClick={redirectToWeb} className="btn" type="button">View Recipe</button>
             </div>
         </div>
     )

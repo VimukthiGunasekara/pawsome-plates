@@ -1,5 +1,9 @@
-export default function Settings(){
-    return(        
-        <div>Settings page</div>
+import FAQ from "../components/Settings/FAQ"
+
+export default function Settings() {
+    return (
+        <div>
+            <FAQ />
+        </div>
     )
 }

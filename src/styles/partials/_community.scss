@@ -1,11 +1,13 @@
 .section.community {
     margin-top: 5em;
+    padding: 0 1em;
 
     .community-title {
         text-align: center;
         color: var(--text-color);
         font-size: 2.5em;
         width: 100%;
+        margin-bottom: 0.5em;
     }
 
     .community-title-snap {
@@ -15,15 +17,16 @@
     .community-title-sec {
         text-align: center;
         width: 100%;
+        margin-bottom: 2em;
     }
 
     .community-section {
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 50px;
+        gap: 20px;
         margin-top: 3em;
-
 
         .community-item {
             text-align: center;
@@ -32,45 +35,122 @@
             border-radius: 100px;
             padding: 0.2em;
             margin-bottom: 1em;
+            transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
 
             &:hover {
                 transform: scale(1.05);
-                transition: getAnimationaDuration(0.6s) ease-in-out;
                 background-color: var(--second-color);
+            }
+
+            img {
+                width: 100%;
+                border-radius: 100px;
+                margin-bottom: 0.5em;
             }
         }
 
         .item1 {
             background-color: #0077b6;
+            margin-top: 50px;
         }
 
         .item2 {
-            margin-top: 2.5em;
             background-color: #ffc300;
         }
 
         .item3 {
             background-color: #283618;
+            margin-top: 50px;
         }
 
         .item4 {
-            margin-top: 2.5em;
             background-color: #eb5e28;
         }
 
         .item5 {
             background-color: #64a76a;
+            margin-top: 50px;
         }
 
         .item6 {
-            margin-top: 2.5em;
             background-color: var(--primary-color);
         }
+    }
+}
 
-        .community-item img {
-            width: 100%;
-            border-radius: 100px;
-            margin-bottom: 0.5em;
+@media (max-width: 1200px) {
+    .section.community {
+        .community-title {
+            font-size: 2em;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .section.community {
+        .community-title {
+            font-size: 1.8em;
+        }
+
+        .community-section {
+            gap: 15px;
+
+            .community-item {
+                width: 90px;
+                height: 90px;
+            }
+
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section.community {
+        .community-title {
+            font-size: 1.6em;
+        }
+
+        .community-section {
+            gap: 10px;
+
+            .community-item {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .section.community {
+        .community-title {
+            font-size: 1.4em;
+        }
+
+        .community-title-sec {
+            font-size: 0.9em;
+        }
+
+        .community-section {
+            gap: 8px;
+
+            .community-item {
+                width: 70px;
+                height: 70px;
+            }
+
+            .item1 {
+                margin-top: 0px;
+            }
+
+            .item3 {
+                margin-top: 0px;
+            }
+
+            .item5 {
+                margin-top: -0px;
+            }
         }
     }
 }
