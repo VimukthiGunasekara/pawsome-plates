@@ -15,8 +15,8 @@ export default function Navbar() {
             path: "/recipes"
         },
         {
-            name: "Settings",
-            path: "/settings"
+            name: "PlayList",
+            path: "/playlist"
         }
     ]
 

@@ -1,0 +1,129 @@
+.playlist-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+
+    .content {
+        flex: 1;
+        max-width: 50%;
+
+        .title {
+            font-size: 3rem;
+            color: var(--text-color);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin: 1rem 0;
+        }
+
+        .staus {
+            margin-top: 2rem;
+            font-size: 1rem;
+            color: var(--text-light);
+
+            span {
+                display: block;
+                margin-top: 0.5rem;
+            }
+
+            .staus-span {
+                color: var(--text-color);
+                font-weight: bold;
+            }
+        }
+
+        .playlists {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: left;            
+        }
+    }
+
+    .image-container {
+        flex: 1;
+        max-width: 45%;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .content {
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.25rem;
+            }
+
+            .staus {
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .content,
+        .image-container {
+            max-width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            .title {
+                font-size: 2rem;
+            }
+
+            .playlists {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+
+                .playlist {
+                    width: 100%;
+                    max-width: 200px;
+                    height: auto;
+                }
+            }
+        }
+
+        .image-container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .content {
+            .title {
+                font-size: 1.75rem;
+            }
+
+            .playlists {
+                .playlist {
+                    width: 100%;
+                    max-width: 250px;
+                }
+            }
+        }
+
+        .image-container {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

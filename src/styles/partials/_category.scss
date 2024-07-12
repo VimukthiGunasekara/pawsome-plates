@@ -1,4 +1,3 @@
-
 .section.category {
     margin-top: 5em;
 
@@ -19,35 +18,15 @@
     }
 
     .category-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5em;
         width: 100%;
-        justify-content: space-around;
         margin-top: 2em;
 
-        .category-item {
-            text-align: center;
+        .card {
             width: 200px;
-            background-color: var(--background-light);
-            border-radius: 8px;
-            padding: 0.5em;
-            margin-bottom: 1em;
-
-            &:hover {
-                transform: scale(1.05);
-                transition: getAnimationaDuration(0.6s) ease-in-out;
-                background-color: var(--second-color);
-            }
-        }
-
-        .category-item img {
-            width: 100%;
-            border-radius: 5px;
-            margin-bottom: 0.5em;
-        }
-
-        .category-item h3 {
-            font-size: 18px;
-            margin: 0;
-            color: #333;
         }
     }
 }

@@ -7,7 +7,7 @@ import {
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Recipes from "./pages/Recipes";
-import Settings from "./pages/Settings";
+import PlayList from "./pages/PlayList";
 
 function App() {
   console.log(process.env.PUBLIC_URL);
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/recipes" element={<Recipes />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/PlayList" element={<PlayList />} />
         </Routes>
       </div>
     </Router>

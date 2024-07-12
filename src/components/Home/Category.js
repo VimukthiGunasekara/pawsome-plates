@@ -1,25 +1,31 @@
+import Card from '../Card';
+
 export default function CategorySection() {
     return (
         <div className="section category">
             <h1 className="category-title">Homemade<span className="category-title-snap"> Styles</span></h1>
             <p className="category-title-sec">Explore delicious, easy-to-make recipes for every occasion.</p>
             <div class="section category-section">
-                <div class="category-item">
-                    <img src={`${process.env.PUBLIC_URL}/image/categoryimg/1.png`} alt="Category 1" />
-                    <h3>Biscuits</h3>
-                </div>
-                <div class="category-item">
-                    <img src={`${process.env.PUBLIC_URL}/image/categoryimg/2.png`} alt="Category 2" />
-                    <h3>Meals</h3>
-                </div>
-                <div class="category-item">
-                    <img src={`${process.env.PUBLIC_URL}/image/categoryimg/3.png`} alt="Category 3" />
-                    <h3>Special Occasions</h3>
-                </div>
-                <div class="category-item">
-                    <img src={`${process.env.PUBLIC_URL}/image/categoryimg/4.png`} alt="Category 4" />
-                    <h3>Frozen Treats</h3>
-                </div>
+                <Card
+                    title="Biscuits"
+                    subtitle="05 Recipes"
+                    imageSrc={`${process.env.PUBLIC_URL}/image/categoryimg/1.png`}
+                />
+                <Card
+                    title="Special Occasions"
+                    subtitle="02 Recipes"
+                    imageSrc={`${process.env.PUBLIC_URL}/image/categoryimg/3.png`}
+                />
+                <Card
+                    title="Meals"
+                    subtitle="05 Recipes"
+                    imageSrc={`${process.env.PUBLIC_URL}/image/categoryimg/2.png`}
+                />
+                <Card
+                    title="Frozen Treats"
+                    subtitle="08 Recipes"
+                    imageSrc={`${process.env.PUBLIC_URL}/image/categoryimg/4.png`}
+                />
             </div>
         </div>
     )
